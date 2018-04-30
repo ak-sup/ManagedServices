@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<!-- <script type="text/javascript" src="script.js"></script> -->
+  <script type="text/javascript">
+    var btn = document.querySelectorAll('[data-animation="ripple"]');
+
+for (var i = 0; i < btn.length; i++) {
+  btn[i].onmousedown = function(e) {
+
+    var x = e.pageX - this.offsetLeft,
+        y = e.pageY - this.offsetTop,
+        w = this.offsetWidth;
+    
+    var ripple = document.createElement('span');
+    
+    ripple.className = 'ripple';
+    ripple.style.left = x + 'px';
+    ripple.style.top  = y + 'px';
+    ripple.style.setProperty('--scale', w);
+
+    this.appendChild(ripple);
+
+    setTimeout(function() {
+      ripple.parentNode.removeChild(ripple);
+    }, 500);
+  }
+}
+  </script>
+	<meta charset="UTF-8">
+	<title>Managed SEO</title>
+</head>
+<body>
+<header>
+	<div class="navhead">
+		<div class="navcontainer">
+		<ul class="nav_ul">
+			<a href="index.html"><div class="navlogo"><img src="images/header_logo.png"></div></a>
+			<li class="dropdown">
+  				<a href="seo.html" class="dropbtn">Managed SEO</a>
+    				<div class="dropdown-content">
+     					<a href="seo_details.html">SEO Service Details</a>
+      					<a href="seo_levels.html">SEO Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown">
+  				<a href="social.html" class="dropbtn">Managed Social</a>
+    				<div class="dropdown-content">
+     					<a href="social_details.html">Social Service Details</a>
+      					<a href="social_levels.html">Social Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown">
+  				<a href="contentcreative.html" class="dropbtn">Contant & Creative</a>
+    				<div class="dropdown-content">
+     					<a href="contentcreative_details.html">Content & Creative Service Details</a>
+      					<a href="contentcreative_levels.html">Content & Creative Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown"><a href="index.html">Home</a></li>
+  		</ul>	
+		</div>	
+	</div>	
+</header>
+<div class="seohero">
+	<!-- HERO IMAGE -->
+</div>
+
+	<div class="interior_about">
+		<a href="seo_details.html"><button class="interior_button">LEARN MORE</button></a>
+    	<h2>Managed SEO Overview</h2>
+    	<hr>
+    	<p>Dealer.com SEO ef ciently maximizes search visibility through the performance of industry-leading websites, the expertise of the world’s deepest collection of online car shopper data, and the power of automotive’s most tightly-connected digital products and services. Optimal search visibility feeds qualified new traffic to websites, elevating website visits, engagement, and leadflow.</p>
+    </div>
+
+    <div class="interior_about">
+    	<h4>Interdisciplinary Teams</h4>
+    	<p>One of the largest SEO organizations in automotive combines continuous search engine training with complete automotive-industry focus and technical specialties:</p>
+    </div>	
+
+    <div class="interior_listitems">
+    	<ul class="interior_ul">
+    		<li>SEO Strategists</li>
+    		<li>SEO Analysts</li>
+    		<li>Program Managers</li>
+    		<li>SEO Copywriters</li>
+    	</ul>
+	</div>	
+
+	<div class="interior_about">
+		<hr>
+		<h3>Overview</h3>
+		<p class="highlight">Strategic Partnership and Reporting</p>
+			<p>Teams work alongside Digital Advisors to incorporate SEO into a complete digital strategy and deliver comprehensive reports that complement program-wide Dealer.com analytics for total digital visibility.</p> 
+			<p class="highlight"> Key insights</p> <p>Keyword rank tracking and reporting that feeds SEO reporting in ControlCenter. Report analysis to identify high-level trends in account performance. Analysis, summary, and recommendations based on dealership SEO strategy.<br>Strategic Options: Standard SEO offers blogging, model specific landing pages, and custom pages; Advanced SEO adds a quarterly strategy development and performance reporting call and two strategic custom pages per quarter; Premium SEO adds monthly strategic call, direct access to your SEO Analyst, and four pieces of strategic content per month.</p>
+	</div>
+	  <div class="interior_about">
+    <a href="contact.html" class="btn orange" href="#" data-animation="ripple">Contact Us</a>
+      <script  src="js/index.js"></script> 
+   </div>
+
+<footer>
+	<a href="index.html"><div class="logo"><img class="footer-logo" src="images/footer_logo.png"></div></a>
+ 	<div class="footer-info"><p class="footer-p">Dealer.com<br>copyright 2001-2018<br>Cox Automotive Inc.  </p>
+ 	</div>
+ 	<!-- <button class="footer-button">CONTACT US</button> -->
+</footer>
+</body>
+</html>

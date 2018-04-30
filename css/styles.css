@@ -1,0 +1,691 @@
+body {
+	margin: 0;
+	background: rgb(52,45,45);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	color: rgb(255,131,0);
+	font-size: 32pt;
+	text-transform: uppercase;
+	line-height: 32pt;
+	margin-bottom: 5px;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	color: rgb(255,131,0);
+	font-weight: 100;
+	font-size: 24pt;
+	line-height: 28pt;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
+h4 {
+	font-family: 'Raleway', sans-serif;
+	color: rgb(255,131,0);
+	font-weight: 100;
+	font-size: 18pt;
+	text-transform: uppercase;
+	margin: 0px;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	/*color: rgb(215,215,215);*/
+  color: white;
+	font-size: 14pt;
+	font-weight: 100;
+	line-height: 18pt;
+	margin-top: 3px;
+}
+ 
+b {
+	font-weight: 400;
+} 
+
+/*NAVAGATION*/
+header {
+  background: rgb(52,45,45);
+  height: 75px;
+  border-bottom: solid 1px rgb(252,131,0);
+  border-width: 80%;
+}
+
+/*header::after {*/
+  content:'';
+  display: table;
+  clear: both;
+}
+
+nav {
+  /*position: absolute;*/
+  width: 100%;
+  height: 75px;
+}
+
+.navlogo {
+  float: left;
+  width: 10%;
+  padding-left: 10%;
+  background: rgb(52,45,45);
+  /*height: 75px;*/
+}
+
+/*.navimg {*/
+	width: 100px;
+}
+.navcontainer {
+  width: 100%;
+  float: right;
+  /*border-bottom: solid white 1px;*/
+  /*height: 75px;*/
+}
+
+.nav_ul {
+	width: 80%;
+    list-style-type: none;
+    height: 75px;
+    margin: 0;
+    /*padding-right: 20%;*/
+    overflow: hidden;
+    background-color: rgb(52,45,45);
+}
+
+/*li {*/
+li.dropdown {	
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 24px 15px 26px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(255,131,0);
+}
+
+li .dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*------------HERO IMAGE BACKGROUND-----------------*/
+
+.indexhero {
+	background-image: url('../images/index_hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid rgb(255,131,0) 2px;
+    border-top: solid rgb(255,131,0) 2px;
+    height: 275px;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+    width: auto;
+}
+
+.creativehero {
+	background-image: url('../images/creative_hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid rgb(255,131,0) 2px;
+    border-top: solid rgb(255,131,0) 2px;
+    height: 275px;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+    width: auto;
+}
+.socialhero {
+	background-image: url('../images/social_hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid rgb(255,131,0) 2px;
+    border-top: solid rgb(255,131,0) 2px;
+    height: 275px;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+    width: auto;
+}
+
+.seohero {
+	background-image: url('../images/social_hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid rgb(255,131,0) 2px;
+    border-top: solid rgb(255,131,0) 2px;
+    height: 275px;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+    width: auto;
+}
+
+/*---------------IMAGE MENU INDEX PAGE---------------*/
+/*grid for image menu below hero image on index page*/
+
+.grid {
+    list-style: none;
+    margin: auto;
+    max-width: 1000px;
+    padding: 5px 0 10px;
+    position: relative;
+    /*text-align: center;*/
+   }
+
+.grid figure {
+    float: left;
+    margin: 10px 1%;
+    max-height: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+    border-color: rgba(255,131,0,1);
+    border-style: solid;
+    text-align: center;
+    width: 48%;
+    background-color: white;
+}
+
+.grid figure img {
+    opacity: 0.4;
+    display: block;
+    max-width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.grid figure figcaption {
+    color: #fff;
+    margin: auto;
+    /*padding-top: 60px;*/
+    height: 300px;
+    vertical-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.figuretext {
+	vertical-align: center;
+	height: 300px;
+	color: black;
+	/*margin: 20px;*/
+	padding-top: 75px;
+	/*padding-bottom: 105px;*/
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.grid figure:hover {
+	background-color: black;
+	color: white;
+}
+.grid figcaption h2:hover {
+	color: white;
+}
+
+/*---------------------CONTENT-----------------------*/
+/*INDEX*/
+.about {
+	/*margin: auto;*/
+	padding-top: 320px;
+  padding-bottom: 50px;
+	/*position*/: left;
+	margin-left: 10%;
+	text-align: left;
+	width: 80%;
+}
+
+.video {
+  width: 80%;
+  margin-left: 30%;
+  margin-right: 30%;
+  
+	/*float: right;*/
+	/*margin-top: 10px;*/
+ 	/*padding-right: 10%;*/
+}
+
+iframe {
+  width: 100%
+  margin: auto;
+	border: solid 2px white;
+}
+
+/*-----------------INTERIOR PAGES----------------*/
+.interior_about {
+	margin: auto;
+	position: center;
+	text-align: left;
+	width: 80%;
+}
+
+.levels {
+    margin: auto;
+    padding-bottom: 10px;
+    position: center;
+    text-align: center;
+    width: 80%
+}
+
+.interior_listitems {
+	margin-left: 10%;
+	position: left;
+	text-align: left;
+	width: 45%;
+}
+
+.interior_listitems2 {
+	margin-left: 10%;
+	position: left;
+	text-align: left;
+	width: 55%;
+}
+
+.interior_ul {
+	list-style-type: circle;
+	color: white;
+	font-weight: 100;
+	text-align: left;
+}
+
+li {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	font-size: 14pt;
+	line-height: 18pt;
+	text-align: left;
+	color: white;
+	padding-bottom: 10px;
+}
+
+.highlight {
+	font-family: 'Raleway', sans-serif;
+	color: rgb(255,131,0);
+	font-size: 14pt;
+	font-weight: 100;
+	line-height: 18pt;
+	margin: 0px;
+}
+
+/*-----------------TABLE------------------*/
+
+table {
+  width: 80%;
+  position: center;
+  border: solid 1px rgb(100,100,100);
+  border-collapse: collapse;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 10px 0px 0px 0px;
+  max-width: 1100px;
+}
+
+th {
+    border: solid 1px rgb(100,100,100);
+    border-collapse: collapse;
+    background-color: rgb(255,131,0);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+tr {
+    border: solid 1px rgb(100,100,100);
+    border-collapse: collapse;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+td {
+    border: solid 1px rgb(100,100,100);
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.offering {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 400px;
+	background-color: black;
+	color: rgb(175,175,175);
+	text-align: left;
+	border-radius: 5px;
+	padding: 5px;
+
+	position: absolute;
+	z-index: 1;
+}
+.tooltip:hover {
+	color: rgb(252,131,0);
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	/*color: rgb(131,252,0);*/
+}
+
+.table_foot {
+    background-color: rgb(150,150,150)
+}
+
+/*-----------------CONTACT---------------*/
+
+.container {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 300 12px/16px 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: rgb(202,195,195);
+  /*color: white*/
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+/*#contact h3 {*/
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  color: black;
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 95%;
+  border: 1px solid rgb(92,85,85);
+  background: white;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  border: 1px solid rgb(252,131,0);
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: rgb(252,131,0);
+  color: white;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: rgb(232,111,0);
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid rgb(232,111,0);
+}
+
+
+/*--------------BUTTON--------------*/
+
+.interior_button {
+	float: right;
+	background-color: rgba(255,131,0,.7);
+    border: 1px solid rgb(255,131,0);
+    color: white;
+    padding: 15px 32px;
+    /*margin-top: 5px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.interior_button:hover {
+  background-color: rgb(255,131,0);
+  border: 1px solid white;
+}
+
+
+/*-------------------------*/
+
+hr {
+	/*margin: 3px;*/
+	border: .5px solid rgb(255,131,0);
+}
+
+br {
+	line-height: 24pt;
+}
+
+
+/*FOOTER*/
+
+footer {
+	position: absolute;
+	width: 100%;
+	margin-top: 50px;
+  	padding: 20px 0;
+  	background-color: rgb(212,212,212);
+  	/*border-top: solid 2px rgb(252,131,0)*/
+  	text-decoration: none;
+}
+
+.footer-p {
+	text-align: center;
+	font-weight: 300;
+}
+
+.logo {
+	width: 75%
+	margin: 8%;
+}
+
+.footer-logo {
+	width: 7%;
+	margin-left: 10%;
+	margin-right: 30%;
+	float: left;
+	/*padding: 10px 30px 10px 30px;*/
+}
+
+.footer-info {
+	width: 60%
+	/*float:right;*/
+
+}
+
+.footer-button {
+	float: right;
+	margin-right: 10%;
+	background-color: rgb(255,131,0);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.social, /*li*/ {
+  display: inline-block;
+  margin: 0 5px;
+}
+.content-footer > p {
+  color: rgb(236, 198, 14);
+}
+
+/* ---------------long Button-------------- */
+.btn {
+  height: 42px;
+  line-height: 42px;
+  display: block;
+  margin: 32px;
+  padding: 0 32px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  font-size: 16pt;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+
+[data-animation] {
+  position: relative;
+  overflow: hidden;
+}
+
+.orange {
+  background: #fc8300;
+}
+.orange:hover {
+  background: #d3730a;
+}
+
+
+/* ---------------Ripple Effect------------- */
+.ripple {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-animation: rippleEffect .75s ease-in-out;
+          animation: rippleEffect .75s ease-in-out;
+}
+
+@-webkit-keyframes rippleEffect {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(var(--scale));
+            transform: scale(var(--scale));
+  }
+}
+
+@keyframes rippleEffect {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(var(--scale));
+            transform: scale(var(--scale));
+  }
+}

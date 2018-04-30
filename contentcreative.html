@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<!-- <script type="text/javascript" src="script.js"></script> -->
+	<script type="text/javascript">
+    var btn = document.querySelectorAll('[data-animation="ripple"]');
+
+for (var i = 0; i < btn.length; i++) {
+  btn[i].onmousedown = function(e) {
+
+    var x = e.pageX - this.offsetLeft,
+        y = e.pageY - this.offsetTop,
+        w = this.offsetWidth;
+    
+    var ripple = document.createElement('span');
+    
+    ripple.className = 'ripple';
+    ripple.style.left = x + 'px';
+    ripple.style.top  = y + 'px';
+    ripple.style.setProperty('--scale', w);
+
+    this.appendChild(ripple);
+
+    setTimeout(function() {
+      ripple.parentNode.removeChild(ripple);
+    }, 500);
+  }
+}
+  </script>
+	<meta charset="UTF-8">
+	<title>Content & Creative Overview</title>
+</head>
+
+<body>
+<header>
+<!-- <div class="navhead"> -->
+		<div class="navhead">
+		<div class="navcontainer">
+		<ul class="nav_ul">
+			<a href="index.html"><div class="navlogo"><img src="images/header_logo.png"></div></a>
+			<li class="dropdown">
+  				<a href="seo.html" class="dropbtn">Managed SEO</a>
+    				<div class="dropdown-content">
+     					<a href="seo_details.html">SEO Service Details</a>
+      					<a href="seo_levels.html">SEO Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown">
+  				<a href="social.html" class="dropbtn">Managed Social</a>
+    				<div class="dropdown-content">
+     					<a href="social_details.html">Social Service Details</a>
+      					<a href="social_levels.html">Social Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown">
+  				<a href="contentcreative.html" class="dropbtn">Contant & Creative</a>
+    				<div class="dropdown-content">
+     					<a href="contentcreative_details.html">Content & Creative Service Details</a>
+      					<a href="contentcreative_levels.html">Content & Creative Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown"><a href="index.html">Home</a></li>
+  		</ul>	
+		</div>	
+	</div>	
+</header>
+<div class="creativehero">
+	<!-- HERO IMAGE -->
+</div>
+	</div>
+
+	<div class="interior_about">
+		<a href="contentcreative_details.html"><button class="interior_button">LEARN MORE</button></a>
+    	<h2>Content & Creative Overview</h2>
+    	<hr>
+    	<p>Dealer.com’s professional designers and copywriters are dedicated to creating compelling and strategic website content that meticulously follows your campaign strategy and goals. Partnering with your Digital Advisor, these content and creative specialists develop all campaigns according to specific dealership, group, and OEM identity.</p>
+    </div>
+
+    <div class="interior_listitems">	
+    	<h4>Content and Creative benefits include:</h4>
+    	<ul class="interior_ul">
+    		<li>A collaborative structure, backed by professional  specialists for efficient campaign management.</li> 
+			<li>Monthly campaign creation highlighting OEM incentives, dealership specials, and other sales events.</li>
+			<li>Automotive specialization for a complete understanding  of the business of car dealerships.</li>
+		</ul>
+	</div>	
+
+	<div class="interior_about">
+		<hr>
+		<h3>Overview</h3>
+		<p>Creative teams leverage unique partnerships with OEMs to build approved campaigns using the most up-to-date and manufacturer compliant media. This reduces time spent gathering assets, resulting in cost savings and creative alignment. Digital campaigns are coordinated, initiated, and managed for optimal impact.</p>
+	</div>
+
+	<div class="interior_listitems">	
+		<h4>Each campaign can include:</h4>
+			<ul class="interior_ul">
+				<li>Homepage Slideshow Images</li>
+				<li>Campaign Landing Pages</li>
+				<li>Landing Page Banners</li>
+				<li>Creative for Specials</li>
+				<li>Creative for Social Visability</li>
+				<li>Enhanced Blog Content</li>
+				<li>Custom Pages</li>
+			</ul>
+	</div>
+
+	<div class="interior_about">		
+		<p class=highlight>Monthly Reporting Summary of Every Campaign</p>
+		<p>Campaign performance comes together in a comprehensive, intuitive monthly report, which is tailored to your specific goals.</p>
+
+		<p class="highlight">Managed Content and Creative Group Service</p>
+		<p>Managed Content and Creative services support the migration of multiple rooftops’ campaign creative onto the group-level website. This functionality enhances campaign visibility for existing Content and Creative customers, and consistency across both the dealership and group websites.</p>
+	</div>
+	<div class="interior_about">
+    	<a href="contact.html" class="btn orange" href="#" data-animation="ripple">Contact Us</a>
+      <script  src="js/index.js"></script> 
+   </div>
+<footer>
+	<a href="index.html"><div class="logo"><img class="footer-logo" src="images/footer_logo.png"></div></a>
+ 	<div class="footer-info"><p class="footer-p">Dealer.com<br>copyright 2001-2018<br>Cox Automotive Inc.  </p>
+ 	</div>
+ 	<!-- <button class="footer-button">CONTACT US</button> -->
+</footer>
+</body>
+</html>

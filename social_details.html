@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<!-- <script type="text/javascript" src="script.js"></script> -->
+  <script type="text/javascript">
+    var btn = document.querySelectorAll('[data-animation="ripple"]');
+
+for (var i = 0; i < btn.length; i++) {
+  btn[i].onmousedown = function(e) {
+
+    var x = e.pageX - this.offsetLeft,
+        y = e.pageY - this.offsetTop,
+        w = this.offsetWidth;
+    
+    var ripple = document.createElement('span');
+    
+    ripple.className = 'ripple';
+    ripple.style.left = x + 'px';
+    ripple.style.top  = y + 'px';
+    ripple.style.setProperty('--scale', w);
+
+    this.appendChild(ripple);
+
+    setTimeout(function() {
+      ripple.parentNode.removeChild(ripple);
+    }, 500);
+  }
+}
+  </script>
+	<meta charset="UTF-8">
+	<title>Managed Social Service Details</title>
+</head>
+
+<body>
+<header>
+<!-- <div class="navhead"> -->
+		<div class="navcontainer">
+		<ul class="nav_ul">
+			<a href="index.html"><div class="navlogo"><img src="images/header_logo.png"></div></a>
+			<li class="dropdown">
+  				<a href="seo.html" class="dropbtn">Managed SEO</a>
+    				<div class="dropdown-content">
+     					<a href="seo_details.html">SEO Service Details</a>
+      					<a href="seo_levels.html">SEO Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown">
+  				<a href="social.html" class="dropbtn">Managed Social</a>
+    				<div class="dropdown-content">
+     					<a href="social_details.html">Social Service Details</a>
+      					<a href="social_levels.html">Social Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown">
+  				<a href="contentcreative.html" class="dropbtn">Contant & Creative</a>
+    				<div class="dropdown-content">
+     					<a href="contentcreative_details.html">Content & Creative Service Details</a>
+      					<a href="contentcreative_levels.html">Content & Creative Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown"><a href="index.html">Home</a></li>
+  		</ul>	
+		</div>	
+	<!-- </div>	 -->
+</header>
+<div class="interior_about">
+    <a href="social_levels.html"><button class="interior_button">Package Levels</button></a>
+      <h2>Managed Social</h2>
+      <hr>
+      <h3>Service Details</h3>
+       <p class="highlight">Assigned Social Media Strategist</p>
+          <p>Managed Social comes with an assigned social media specialist that manages your social accounts, and is available to fi eld questions regarding social strategy directly</p>
+
+        <p class="highlight">Monthly Strategy and Performance Call</p>
+          <p>Each month the social media specialist will have a scheduled call with you to discuss the performance of the previous month’s content and the strategy for the next month. Overall strategy can be aligned with other Managed Services such as SEO and Content and Creative.</p>
+
+        <p class="highlight">Monthly Reporting</p>
+          <p>Each month we will provide a specifi c social media report that includes high-level overviews of your dealership’s performance on social channels, with a specific focus on Facebook. Using data for content performance, page engagement over time, demographics, etc., you can implement informed future strategies.</p>
+
+        <p class="highlight">Additional Page Content Creation (pages per month)</p>
+          <p>Each month, we’ll write additional content for pages of the client’s website. This content could be for the About Us, Service, Parts, etc.,pages and will be focused on creating a consistent message showcasing what makes the dealership unique.</p>
+
+        <p class="highlight">Strategic Monthly Posting</p>
+          <p>Social strategists implement a plan to post media at predetermined times. These posts are planned out over a month and synchronized with overall digital strategy.</p>
+
+        <p class="highlight">Agile Positing Capability</p>
+          <p>Close contact with your strategist enables our team to post relevant content immediately.</p>
+
+        <p class="highlight">Social Activity Across Multiple Social Channels</p>
+          <p>Proactive creation and execution of content across all social media networks.</p>
+        
+        <p class="highlight">Report</p>
+          <p>We will provide a report that looks at the performance of the campaigns and assets we’ve created for the client, including slide impressions and clicks. This report will be generated monthly and delivered in tandem with the reporting call.</p>
+
+        <p class="highlight">Targeted Facebook Posts</p>
+          <p>In addition to general news feed posts, we can serve up content to a targeted demographic or custom audience</p>
+
+        <p class="highlight">Real-time Reputation Monitoring to Comments and Reviews</p>
+          <p>Social media specialists provide recommended responses to both negative and positive reviews and comments.</p>
+
+          <p class="highlight">Event Management</p>
+          <p>Upon your request, social specialists create Facebook Events on your Facebook page to promote dealership activities (BBQs, unique test drive events, etc.)— from strategy-building, con- tent writing, and asset design. </p>
+
+          <p class="highlight">Planned Instagram Posts</p>
+          <p>Social media specialists schedule posts to your Instagram account that go live on a predetermined date and time.</p>
+         
+          <p class="highlight">Contest Management</p>
+          <p>Upon your request, social specialists will manage Facebook contests—from strategizing to content and creative asset generation to implementation.</p>
+
+          <p class="highlight">Custom Social Creative Assets</p>
+          <p>Managed Social will create profile and cover photos as well as Facebook advertising creative you’re your request.</p>
+
+          <p class="highlight">Included Social Boosting Ad Spend</p>
+          <p>Advanced Social clients receive $25 of Facebook ad spend and Premium Social clients receive $75 in order to help grow their social fanbase.</p>
+
+          <p class="highlight">Monthly Socially Relevant Blog Post</p>
+          <p>Advanced subscribers get one monthly social blog post and Premium subscribers receive two monthly blog posts specifi cally written and designed for social sharing.</p>
+
+          <p class="highlight">Social Boosting ($200)</p>
+          <p>Managed Social Boosting enables dealerships to take advantage of our dedicated social professionals to align your overall digital strategy and brand guidelines to drive successful campaigns. This is a reoccurring, monthly, a la carte off ering for dealerships that want to invest more than their current boosting allocations of our current Managed Social packages. Our team will use Facebook boosting to enhance your campaigns in order to optimize your social identity and reach</p>
+      </div>
+
+   <div class="interior_about">
+    <a href="contact.html" class="btn orange" href="#" data-animation="ripple">Contact Us</a>
+      <script  src="js/index.js"></script> 
+   </div>
+
+<footer>
+  <a href="index.html"><div class="logo"><img class="footer-logo" src="images/footer_logo.png"></div></a>
+  <div class="footer-info"><p class="footer-p">Dealer.com<br>copyright 2001-2018<br>Cox Automotive Inc.  </p>
+  </div>
+  <!-- <button class="footer-button">CONTACT US</button> -->
+</footer>
+</body>
+</html>

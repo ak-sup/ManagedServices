@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<!-- <script type="text/javascript" src="script.js"></script> -->
+  <script type="text/javascript">
+    var btn = document.querySelectorAll('[data-animation="ripple"]');
+
+for (var i = 0; i < btn.length; i++) {
+  btn[i].onmousedown = function(e) {
+
+    var x = e.pageX - this.offsetLeft,
+        y = e.pageY - this.offsetTop,
+        w = this.offsetWidth;
+    
+    var ripple = document.createElement('span');
+    
+    ripple.className = 'ripple';
+    ripple.style.left = x + 'px';
+    ripple.style.top  = y + 'px';
+    ripple.style.setProperty('--scale', w);
+
+    this.appendChild(ripple);
+
+    setTimeout(function() {
+      ripple.parentNode.removeChild(ripple);
+    }, 500);
+  }
+}
+  </script>
+	<meta charset="UTF-8">
+	<title>Content & Creative Product Details</title>
+</head>
+
+<body>
+<header>
+<!-- <div class="navhead"> -->
+		<div class="navcontainer">
+		<ul class="nav_ul">
+			<a href="index.html"><div class="navlogo"><img src="images/header_logo.png"></div></a>
+			<li class="dropdown">
+  				<a href="seo.html" class="dropbtn">Managed SEO</a>
+    				<div class="dropdown-content">
+     					<a href="seo_details.html">SEO Service Details</a>
+      					<a href="seo_levels.html">SEO Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown">
+  				<a href="social.html" class="dropbtn">Managed Social</a>
+    				<div class="dropdown-content">
+     					<a href="social_details.html">Social Service Details</a>
+      					<a href="social_levels.html">Social Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown">
+  				<a href="contentcreative.html" class="dropbtn">Contant & Creative</a>
+    				<div class="dropdown-content">
+     					<a href="contentcreative_details.html">Content & Creative Service Details</a>
+      					<a href="contentcreative_levels.html">Content & Creative Package Levels</a>
+      				</div>
+  			</li>
+  			<li class="dropdown"><a href="index.html">Home</a></li>
+  		</ul>	
+    </div>	
+	<!-- </div>	 -->
+</header>
+<div class="interior_about">
+    <a href="contentcreative_levels.html"><button class="interior_button">Package Levels</button></a>
+      <h2>Content & Creative</h2>
+      <hr>
+      <h3>Service Details</h3>
+       <a name="digital_advisor"><p class="highlight">Digital Advisor</p></a>
+          <p>A Digital Advisor will be assigned to all subscribers of Content and Creative, regardless of package level. Most clients already have a DA, but there are some programs (CLLC) where the client only gets a DA with certain subscription based products/ services. For Standard Content and Creative where the client is assigned a DA, the DA will handle the asset requests.</p>
+
+        <p class="highlight">Assigned Campaign Coordinator</p>
+          <p>Clients will get an assigned Campaign Coordinator with the Advanced and Premium level oferings. This means that they will have direct access to one Campaign Coordinator that will handle all of the work for that client. The Campaign Coordinators for the Standard ofering will work on a rotating queue-based system.</p>
+
+        <p class="highlight">Compliance - Assets</p>
+          <p>Every asset we create will be submitted for OEM compliance approval. Note that some OEMs do not have compliance rules in place, so this is only for sites with OEMs that have a formal compliance bureau. Note that we’ll create the assets in the turnaround time window provided, but compliance approval can take additional time.</p>
+
+        <p class="highlight">Additional Page Content Creation (pages per month)</p>
+          <p>Each month, we’ll write additional content for pages of the client’s website. This content could be for the About Us, Service, Parts, etc.,pages and will be focused on creating a consistent message showcasing what makes the dealership unique.</p>
+
+        <p class="highlight">Monthly Site Audit for Expired Offers (specials, slides, benners)</p>
+          <p>Once a month, we’ll check the site for expired offers and remove any that are outdated. We’ll check for specials, slides and banners that have o ers that are no longer available.</p>
+
+        <p class="highlight">Social Creative (profile and cover photos)</p>
+          <p>We’ll create pro le photos and cover photos upon client request. If the client is a Managed Services – Social client, we will upload these assets to their pages. If they are not a Social subscriber, we’ll provide the assets to the client for them to upload.</p>
+
+        <p class="highlight">Monthly Integrated Campaigns</p>
+          <p>Integrated campaigns keep your digital marketing message consistent across the web. We’ll work with the client to create integrated campaigns that are based on the client’s marketing strategy and OEM consistency.<br>Each campaign can include the following:</p>
+        </div>
+            <div class="interior_listitems2">
+              <ul class="interior_ul">
+                <li><b>Custom Home Page Slides:</b> We’ll create slides for your homepage for each integrated campaign. Slides will be uploaded after the client’s approval and will be removed upon the campaign’s expiration date.</li>
+                <li><b>Updated Specials:</b> Keeping the specials pages up to date is important for campaign consistency, so specials are included in campaigns. The special will match the look and feel of the slide so users knows they are viewing the right deal.</li>
+                <li><b>Landing Pages:</b> When appropriate, we’ll build a custom landing page for the campaign. The landing page will be linked from the slide on the homepage and will feature content and imagery focused on the integrated campaign. We’ve built landing pages for events, sales, community partnerships, inventory, and plenty more.</li>
+                <li><b>Banners:</b> Banners are similar to slides, but are shorter in height and are used for the top of landing pages. They will match the same design look and feel as the campaign and are designed to show the offer being promoted.</li>
+                <li><b>Display Ads:</b> If you are subscribed to our Advertising services, we’ll create a display ad set for the campaign. A display ad set will include one leaderboard, one medium rectangle, and one wide skyscraper-style display ad.</li>
+              </ul>
+            </div>
+        <div class="interior_about">       
+          <p class="highlight">Report</p>
+          <p>We will provide a report that looks at the performance of the campaigns and assets we’ve created for the client, including slide impressions and clicks. This report will be generated monthly and delivered in tandem with the reporting call.</p>
+
+          <p class="highlight">Reporting Calls</p>
+          <p>In the middle of each month, we have a scheduled call to discuss the performance of the previous month’s campaigns. We will walk the client through the report and provide any additional data from ControlCenter to support our reports.</p>
+
+          <p class="highlight">Gathering/Extraction Calls with Proactive Recommendations</p>
+          <p>At the beginning of every month, we’ll have a call with clients to gather information about what they would like to do run for campaigns that month. We’ll also provide recommendations based on previously successful campaigns and industry knowledge/best practices.</p>
+
+          <p class="highlight">Campagin Brief</p>
+          <p>During the gathering/extraction call, the Campaign Coordinator will  ll out a campaign brief that outlines the campaigns and campaign details for the month. This document can be sent to the client upon request.</p>
+
+          <p class="highlight">Asset Turnaround Time (business days)</p>
+          <p>We will create the assets in two business days for Advanced and Premium, and three business days for Standard. These turnaround times do not include compli- ance approval.</p>
+          <hr>
+          <h4>Specific to Premium</h4>
+          <hr>
+          <p class="highlight">Website Buttons</p>
+          <p>As part of the Premium level service, we’ll design new buttons for the website upon clients’ request.</p>
+
+          <p class="highlight">Inventory Overlays</p>
+          <p>If clients are subscribed to the Inventory Marketing Package (or has Photo Overlays a-la-carte), we will design custom overlays for them upon request.</p>
+
+          <p class="highlight">Email Newsletter Content</p>
+          <p>We will help design and write the newsletter for clients to email out. We will not be sending the email newsletter, but rather just creating the content/assets for clients to send through whichever email marketing tools they are using.</p>
+
+          <p class="highlight">Off-Network Display (e.g. Pandoraa.com and Facebook Carousel Ads)</p>
+          <p>As clients decide to utilize advertising in di erent areas, we can help create the visual assets for their ads (such as on Pandora.com) upon request.</p>
+
+          <p class="highlight">Full Site Submitted for OEM Compliance</p>
+          <p>Each month, we’ll submit the full website to the OEM’s Compliance Agency/Bureau for approval. For OEMs without a formal compliance bureau, we are not able to provide this service (we’d be happy to if and when the OEM starts checking for compliance).</p>
+      </div>
+         <div class="interior_about">
+    <a href="contact.html" class="btn orange" href="#" data-animation="ripple">Contact Us</a>
+      <script  src="js/index.js"></script> 
+   </div>
+<footer>
+  <a href="index.html"><div class="logo"><img class="footer-logo" src="images/footer_logo.png"></div></a>
+    <div class="footer-info"><p class="footer-p">Dealer.com<br>copyright 2001-2018<br>Cox Automotive Inc.  </p>
+  </div>
+  <!-- <button class="footer-button">CONTACT US</button> -->
+</footer>
+</body>
+</html>

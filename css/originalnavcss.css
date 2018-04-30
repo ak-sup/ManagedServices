@@ -1,0 +1,61 @@
+/*ORIGINAL NAVIGATION CSS*/
+.navcontainer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	background: rgb(52,45,45);
+}
+
+header::after {
+	content:'';
+	display: table;
+	clear: both;
+}
+
+.navlogo {
+	float: left;
+}
+
+nav {
+	float: right;
+	height: 75px;
+	/*position: fixed;*/
+}
+
+ .nav_ul {
+	/*position: absolute;*/
+	margin: 0px;
+	/*padding-top: 18px;*/
+	height: 75px;
+	list-style: none;
+}
+
+/*nav li*/ .nav_li{
+	display: inline-block;
+	text-align: center;
+	vertical-align: center;
+	width: 110px;
+	/*height: 75px;*/
+	margin-left: 20px;
+	/*margin-bottom: 25px;*/
+	padding-top: 18px;
+	padding-bottom: 9px;
+	
+}
+
+nav a {
+	color: rgb(255,131,0);
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: white;
+}
+
+.nav_li:hover {
+	background-color: rgb(255,131,0);
+	width: 110px;
+}
